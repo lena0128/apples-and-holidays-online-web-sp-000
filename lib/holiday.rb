@@ -73,11 +73,10 @@ holiday_hash.each do |season, holiday|
     holiday.each do |events|
       capitalized_events = events.to_s.split('_').each {|event| event.capitalize!}.join(' ')
       puts "#{capitalized_events}: #{event}.join(",")"
-
+     end
    end
   end
- end
-end
+
 
 
 def all_holidays_with_bbq(holiday_hash)
