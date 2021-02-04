@@ -87,7 +87,7 @@ holiday_hash.each do |season, holiday|
   holiday.each do |events|
     events.each do |event|
       if event == "BBQ"
-        bbq_holiday << season["BBQ"]
+        bbq_holiday << season.key("BBQ")
       end
     end
   end
